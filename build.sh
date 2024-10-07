@@ -58,7 +58,7 @@ function create_project_files() {
 
 int main(int ac, char *av[]) {
   std::cout << "Welcome to this new project!";
-  return 0
+  return 0;
 }
 
 EOL
