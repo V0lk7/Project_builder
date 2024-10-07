@@ -51,7 +51,7 @@ function create_project_dirs() {
 function create_project_files() {
   local MAIN_CPP="$DIR_NAME/source/main.cpp"
   local CMAKELIST="$DIR_NAME/source/CMakeLists.txt"
-  local CMAKEVERSION=$(cmake --version | awk '{print $3}' | head -1)
+  local CMAKEVERSION=$(cmake --version | awk '{print $3}' | head -1 | awk -F. '{print $1 "." $2}')
 
   cat <<EOL >$MAIN_CPP
 #include <iostream>
