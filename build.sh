@@ -57,7 +57,7 @@ function create_project_files() {
 #include <iostream>
 
 int main(int ac, char *av[]) {
-  std::cout << \"Welcome to this new project!\";
+  std::cout << "Welcome to this new project!";
   return 0
 }
 
